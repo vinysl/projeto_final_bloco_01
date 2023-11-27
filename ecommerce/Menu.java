@@ -21,10 +21,10 @@ public class Menu {
 			System.out.println("                    4 - Atualizar café                                           ");
 			System.out.println("                    5 - Apagar café                                              ");
 			System.out.println("                    6 - Comprar café                                             ");
-			System.out.println("                    6 - Comprar acessórios                                       ");
-			System.out.println("                    7 - Processo de fabricação do café                           ");
-			System.out.println("                    8 - Conheça a nossa história                                 ");
-			System.out.println("                    9 - Sair                                                     ");
+			System.out.println("                    7 - Comprar acessórios                                       ");
+			System.out.println("                    8 - Processo de fabricação do café                           ");
+			System.out.println("                    9 - Conheça a nossa história                                 ");
+			System.out.println("                    10 - Sair                                                     ");
 			System.out.println("                                                                                 ");
 			System.out.println("                    Entre com a opção desejada:                                  ");
 			
@@ -46,7 +46,7 @@ public class Menu {
 				keyPress();
 			}
 			
-			if (opcao == 9) {
+			if (opcao == 10) {
 				sair();
 				leia.close();
 				System.exit(0);
@@ -54,16 +54,49 @@ public class Menu {
 			
 			switch (opcao) {
 			case 1:
-				System.out.println("\nComprar café");
+				System.out.println("\nCadastrar café");
 				
 				keyPress();
 				break;
 				
 			case 2:
-				System.out.println("\nComprar acessórios");
+				System.out.println("\nListar café");
 				
 				keyPress();
 				break;
+				
+			case 3:
+				System.out.println("\nBuscar café");
+				
+				keyPress();
+				break;
+				
+			case 4:
+				System.out.println("\nAtualizar café");
+				
+				keyPress();
+				break;
+				
+			case 5:
+				System.out.println("\nApagar café");
+				
+				keyPress();
+				break;
+				
+			case 6:
+				System.out.println("\nComprar café");
+				
+				keyPress();
+				break;
+				
+			case 7:
+				System.out.println("Comprar acessórios");
+				
+				keyPress();
+				break;
+				default:
+					System.out.println("\nDigite uma opção válida...");
+					keyPress();
 			}
 		}
 
