@@ -15,10 +15,16 @@ public class Menu {
 			System.out.println("                                                                                 ");
 			System.out.println("BEM VINDO AO AROMA CELESTIAL: A SUA LOJA ESPECIALIZADA EM CAFÉS DE TODOS OS TIPOS");
 			System.out.println("                                                                                 ");
-			System.out.println("                    1 - Comprar café                                             ");
-			System.out.println("                    2 - Comprar acessórios                                       ");
-			System.out.println("                    3 - Processo de fabricação do café                           ");
-			System.out.println("                    4 - Conheça a nossa história                                 ");
+			System.out.println("                    1 - Cadastrar café                                           ");
+			System.out.println("                    2 - Listar café                                              ");
+			System.out.println("                    3 - Buscar café                                              ");
+			System.out.println("                    4 - Atualizar café                                           ");
+			System.out.println("                    5 - Apagar café                                              ");
+			System.out.println("                    6 - Comprar café                                             ");
+			System.out.println("                    6 - Comprar acessórios                                       ");
+			System.out.println("                    7 - Processo de fabricação do café                           ");
+			System.out.println("                    8 - Conheça a nossa história                                 ");
+			System.out.println("                    9 - Sair                                                     ");
 			System.out.println("                                                                                 ");
 			System.out.println("                    Entre com a opção desejada:                                  ");
 			
@@ -30,14 +36,20 @@ public class Menu {
 				opcao = 0;
 			}
 			
-			if (opcao == 3) {
+			if (opcao == 7) {
 				producao();
 				keyPress();
 			}
 			
-			if (opcao == 4) {
+			if (opcao == 8) {
 				sobre();
 				keyPress();
+			}
+			
+			if (opcao == 9) {
+				sair();
+				leia.close();
+				System.exit(0);
 			}
 			
 			switch (opcao) {
@@ -69,6 +81,10 @@ public class Menu {
 		System.out.println("\nA Café Celestial é dedicada à produção de café de alta qualidade. "
 				+ "Grãos cuidadosamente selecionados de fazendas sustentáveis passam por um processo meticuloso, desde a colheita até a torra artesanal. "
 				+ "A habilidade dos baristas em preparar o café destaca-se, proporcionando aos clientes uma experiência celestial em cada xícara.");
+	}
+	
+	public static void sair() {
+		System.out.println("\nObrigado por acessar a Aroma Celestial! :)");
 	}
 	
 	public static void keyPress() {
