@@ -8,7 +8,8 @@ public class Menu {
 
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
-		int opcao=0;
+		int opcao=0, tipoCafe;
+		String nomeCafe, cafeTorrado, cafeMoido;
 		
 		while(true) {
 			
@@ -55,6 +56,21 @@ public class Menu {
 			switch (opcao) {
 			case 1:
 				System.out.println("\nCadastrar café");
+				
+				System.out.println("\nDigite o nome do café: ");
+				nomeCafe = leia.nextLine();
+				
+				do {
+					System.out.println("\nEscolha o tipo de café (1- Torrado/2- Moido): ");
+					tipoCafe = leia.nextInt();
+				} while(tipoCafe < 1 && tipoCafe > 2);
+				
+				switch (tipoCafe) {
+				case 1: {
+					cafeTorrado = leia.nextLine();
+					
+				}
+				}
 				
 				keyPress();
 				break;
